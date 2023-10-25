@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Mr.Johnson",
+    "department": "English",
+    "joiningDate": "1 Janurary 2023",
+    "experience": "2+ years teaching experience",
+    "numberofclass": "5 classes",
+    "numberofstudents": "15 students",
+    "img": "https://i.ibb.co/6WtRWZ9/172986395.jpg",
+    "email": "jonson101@gmail.com"
+  },
+  {
+    "name": "Mr.Shane Warne",
+    "department": "Spanish",
+    "joiningDate": "1 Janurary 2023",
+    "experience": "1.5+ years teaching experience",
+    "numberofclass": "2 classes",
+    "numberofstudents": "25 students",
+    "img": "https://i.ibb.co/tC7KkpW/senior-academic-professor-giving-lecture-260nw-1289917114.jpg",
+    "email": "shane10@gmail.com"
+  },
+  {
+    "name": "Mr.Micheal Clark",
+    "department": "German",
+    "joiningDate": "18 Janurary 2023",
+    "experience": "2.5+ years teaching experience",
+    "numberofclass": "2 classes",
+    "numberofstudents": "25 students",
+    "img": "https://i.ibb.co/ZhYjLjW/images-q-tbn-ANd9-Gc-Tvt-WSf2c-DOPk-Kub-Uubnyq-rxf-SCQvd13-wog-usqp-CAU.jpg",
+    "email": "Clark60@gmail.com"
+  },
+  {
+    "name": "Mr.WiliamSon",
+    "department": "Italian",
+    "joiningDate": "1 Janurary 2023",
+    "experience": "1.5+ years teaching experience",
+    "numberofclass": "4 classes",
+    "numberofstudents": "25 students",
+    "img": "https://i.ibb.co/XX0Tsh3/Screenshot-30.png",
+    "email": "Williamson80@gmail.com"
+  },
+  {
+    "name": "Abdullah Zainab",
+    "department": "Arabic",
+    "joiningDate": "1 Janurary 2023",
+    "experience": "1.5+ years teaching experience",
+    "numberofclass": "3 classes",
+    "numberofstudents": "25 students",
+    "Subject": "Spanish",
+    "img": "https://i.ibb.co/Z6ySHCp/1000-F-190543073-bz6-Sjk-IIx6t-EWOquw9o-PECIzr-Pf-Jtwh-L.jpg",
+    "email": "Zainab@gmail.com"
+  },
+  {
+    "name": "Lookie Ferguison",
+    "department": "French",
+    "joiningDate": "19 Janurary 2023",
+    "experience": "1.5+ years teaching experience",
+    "numberofclass": "5 classes",
+    "numberofstudents": "25 students",
+    "img": "https://i.ibb.co/qFwVVzp/teacher-writing-arabic-at-the-islamic-arts-and-crafts-school-tripoli-AXJ8-CY.jpg",
+    "email": "Lookie@gmail.com"
+  }
+]

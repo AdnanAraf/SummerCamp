@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Arabic Language",
+    "lesson": "36 Lesson",
+    "hour": "36hr",
+    "level": "Beginner",
+    "img": "https://i.ibb.co/vhXRqm6/Screenshot-25.png",
+    "rating": "4.7",
+    "price": 50,
+    "availableseat": 15,
+    "instructorname": "Abdullah Zainab"
+  },
+  {
+    "name": "French Language",
+    "lesson": "26 Lesson",
+    "hour": "26hr",
+    "level": "Beginner",
+    "img": "https://i.ibb.co/1r2PQ2m/Screenshot-27.png",
+    "rating": "5",
+    "price": 60,
+    "availableseat": 10,
+    "instructorname": "Lookie Ferguison"
+  },
+  {
+    "name": "Italian Language",
+    "lesson": "26 Lesson",
+    "hour": "26hr",
+    "level": "Beginner",
+    "img": "https://i.ibb.co/cNbTLrY/Screenshot-28.png",
+    "rating": "5",
+    "price": 39,
+    "availableseat": 25,
+    "instructorname": "Mr.WiliamSon"
+  },
+  {
+    "name": "English Language",
+    "lesson": "30 Lesson",
+    "hour": "30hr",
+    "level": "Beginner",
+    "img": "https://i.ibb.co/xXPx147/Screenshot-26.png",
+    "rating": "5",
+    "price": 60,
+    "availableseat": 18,
+    "instructorname": "Mr.Johnson"
+  },
+  {
+    "name": "German Language",
+    "lesson": "28 Lesson",
+    "hour": "28hr",
+    "level": "Beginner",
+    "img": "https://i.ibb.co/6W83t8X/German-Language.png",
+    "rating": "5",
+    "price": 55,
+    "availableseat": 20,
+    "instructorname": "Mr.Micheal Clark"
+  },
+  {
+    "name": "Spanish Language",
+    "lesson": "23 Lesson",
+    "hour": "28hr",
+    "level": "Beginner",
+    "img": "https://i.ibb.co/tzcqgLZ/Screenshot-29.png",
+    "rating": "5",
+    "price": 40,
+    "availableseat": 22,
+    "instructorname": "Mr.Shane Warne"
+  }
+]
