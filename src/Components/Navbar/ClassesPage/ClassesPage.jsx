@@ -2,9 +2,12 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import ClassesPageCard from "./ClassesPageCard";
+import usePayment from "../../hooks/usePayment";
+import CheckoutForm from "../../Payment/CheckoutForm";
 
 const ClassesPage = () => {
   const [student, setstudent] = useState([]);
+  const [payment] = usePayment();
   useEffect(() => {
     fetch("http://localhost:5000/ForeignCategories")
       .then((res) => res.json())

@@ -1,4 +1,7 @@
 import React from "react";
+import { useEffect } from "react";
+import { useContext } from "react";
+import { useState } from "react";
 import {
   FaChair,
   FaChalkboardTeacher,
@@ -7,8 +10,19 @@ import {
 } from "react-icons/fa";
 import Rating from "react-rating";
 import { Link } from "react-router-dom";
-
+import { AuthContext } from "../../Provider/AuthProvider";
+import usePayment from "../../hooks/usePayment";
+let cnt = 0;
 const ClassesPageCard = ({ item }) => {
+  const [payment] = usePayment();
+  console.log(payment);
+  const [payments, setpayments] = useState(0);
+  // useEffect(() => {
+  //   fetch("payment")
+  //     .then((res) => res.json())
+  //     .then((data) => console.log(data));
+  // }, []);
+
   const {
     _id,
     name,
@@ -21,11 +35,24 @@ const ClassesPageCard = ({ item }) => {
     instructorname,
     availableseat,
   } = item;
+  let seat = 0,
+    seats;
+  const total = 1;
+
+  for (let persone of payment) {
+    if (persone.menuItems == item._id) {
+      seat = availableseat - 1;
+      setpayments(seat);
+      seats = 1;
+      cnt = 1;
+    }
+  }
+  console.log(cnt);
+
   return (
     <div>
       <div className="h-[470px] w-[300px] bg-white rounded-lg shadow-lg ">
         <img className="h-[200px] w-full" src={img}></img>
-
         <div>
           <h1 className="mt-[10px] text-[16px] pl-[10px] font-titleFont font-semibold text-blue-800">
             {name}
@@ -96,10 +123,22 @@ const ClassesPageCard = ({ item }) => {
         <div>
           <div className="flex mt-[20px] gap-[10px] ml-[10px]">
             <FaChair></FaChair>
-            <p className="text-[20px] mt-[-8px] font-titleFont">
-              {" "}
-              {availableseat} Seat
-            </p>
+            {/* {persone.map((item) => (
+              <p>{availableseat - 1}</p>
+            ))} */}
+            {seats == 1 ? (
+              <>
+                <p className="text-[20px] mt-[-8px] font-titleFont">
+                  {payments} Seat
+                </p>
+              </>
+            ) : (
+              <>
+                <p className="text-[20px] mt-[-8px] font-titleFont">
+                  {availableseat} Seat
+                </p>
+              </>
+            )}
           </div>
           <div className="flex mt-[20px] gap-[10px] ml-[10px]">
             <FaChalkboardTeacher></FaChalkboardTeacher>

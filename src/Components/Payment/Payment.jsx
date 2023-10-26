@@ -10,7 +10,6 @@ const Payment = () => {
     "pk_test_51NJpP7EhIE2U5k3MyXs1geM6YS6UcYfBEXy2aMne8rZy2Q1vJ26nHEXVNb8TWSJAnufwctGuflUtFZpovmlxyPv100qodpzB5o"
   );
   const [cart] = useCart();
-
   const result = cart.reduce((sum, item) => item.price + sum, 0);
   return (
     <div>
