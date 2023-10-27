@@ -81,7 +81,7 @@ const CheckoutForm = ({ cart, price }) => {
         // name: cart.map((item) => item.name),
         // Cartprice: cart.map((item) => item.price),
         // teacher: cart.map((item) => item.teachername),
-        seat: cart.map((item) => item.availableseat - 1),
+        seat: cart.map((item) => item.seat),
         menuItems: cart.map((item) => item.MenuItemID),
         status: "service pending",
         // itemNames: cart.map((item) => item.name),

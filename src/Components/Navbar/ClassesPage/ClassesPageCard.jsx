@@ -35,19 +35,15 @@ const ClassesPageCard = ({ item }) => {
     instructorname,
     availableseat,
   } = item;
-  let seat = 0,
-    seats;
-  const total = 1;
 
-  for (let persone of payment) {
-    if (persone.menuItems == item._id) {
-      seat = availableseat - 1;
-      setpayments(seat);
-      seats = 1;
-      cnt = 1;
+  let cnt = 0;
+  let cnt2;
+  for (let item of payment) {
+    if (item.seat == availableseat) {
+      cnt++;
     }
   }
-  console.log(cnt);
+  // console.log(cnt);
 
   return (
     <div>
@@ -126,19 +122,12 @@ const ClassesPageCard = ({ item }) => {
             {/* {persone.map((item) => (
               <p>{availableseat - 1}</p>
             ))} */}
-            {seats == 1 ? (
-              <>
-                <p className="text-[20px] mt-[-8px] font-titleFont">
-                  {payments} Seat
-                </p>
-              </>
-            ) : (
-              <>
-                <p className="text-[20px] mt-[-8px] font-titleFont">
-                  {availableseat} Seat
-                </p>
-              </>
-            )}
+
+            <>
+              <p className="text-[20px] mt-[-8px] font-titleFont">
+                {availableseat} Seat
+              </p>
+            </>
           </div>
           <div className="flex mt-[20px] gap-[10px] ml-[10px]">
             <FaChalkboardTeacher></FaChalkboardTeacher>
