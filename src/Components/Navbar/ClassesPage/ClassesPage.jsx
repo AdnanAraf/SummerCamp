@@ -9,7 +9,7 @@ const ClassesPage = () => {
   const [student, setstudent] = useState([]);
   const [payment] = usePayment();
   useEffect(() => {
-    fetch("http://localhost:5000/ForeignCategories")
+    fetch("https://musical-server-adnanaraf.vercel.app/ForeignCategories")
       .then((res) => res.json())
       .then((data) => setstudent(data));
   }, []);

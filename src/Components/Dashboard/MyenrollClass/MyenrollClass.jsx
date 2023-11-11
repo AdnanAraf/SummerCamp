@@ -12,7 +12,7 @@ const MyenrollClass = () => {
   const { user } = useContext(AuthContext);
   // console.log(enroll);
   // useEffect(() => {
-  //   fetch(`http://localhost:5000/payments/${user?.email}`)
+  //   fetch(`https://musical-server-adnanaraf.vercel.app/payments/${user?.email}`)
   //     .then((res) => res.json())
   //     .then((data) => setenroll(data));
   // }, []);

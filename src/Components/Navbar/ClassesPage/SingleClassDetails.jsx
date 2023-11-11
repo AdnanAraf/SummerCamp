@@ -35,7 +35,7 @@ const SingleClassDetails = () => {
         email: user.email,
         seat: availableseat,
       };
-      fetch("http://localhost:5000/carts", {
+      fetch("https://musical-server-adnanaraf.vercel.app/carts", {
         method: "POST",
         headers: {
           "content-type": "application/json",

@@ -16,6 +16,7 @@ import Alluser from "../Dashboard/Alluser/Alluser";
 import ManageClass from "../Dashboard/ManageClass/ManageClass";
 import Mycart from "../Dashboard/Mycart";
 import MyenrollClass from "../Dashboard/MyenrollClass/MyenrollClass";
+import Home2 from "../Home/Home2";
 
 const Routes = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const Routes = createBrowserRouter([
       {
         path: "/",
         element: <Home1 />,
+      },
+      {
+        path: "home",
+        element: <Home2 />,
       },
       {
         path: "login",
@@ -46,7 +51,9 @@ const Routes = createBrowserRouter([
         path: "classcard/:id",
         element: <SingleClassDetails />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/ForeignCategories/${params.id}`),
+          fetch(
+            `https://musical-server-adnanaraf.vercel.app/ForeignCategories/${params.id}`
+          ),
       },
     ],
   },

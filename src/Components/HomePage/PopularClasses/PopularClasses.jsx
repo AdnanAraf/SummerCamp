@@ -4,7 +4,7 @@ import PopularClassesCard from "./PopularClassesCard";
 const PopularClasses = () => {
   const [category, setcategory] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/ForeignCategories")
+    fetch("https://musical-server-adnanaraf.vercel.app/ForeignCategories")
       .then((res) => res.json())
       .then((data) => setcategory(data));
   }, []);
