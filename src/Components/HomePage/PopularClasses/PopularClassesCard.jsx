@@ -21,8 +21,8 @@ const PopularClassesCard = ({ item }) => {
             placeholderSymbol={<FaStar />}
             fullSymbol={<FaStar />}
           />
-          <div className="flex mt-[15px]">
-            <div className="flex">
+          <div className="flex mt-[15px] gap-[10px]">
+            <div className="flex ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -37,9 +37,11 @@ const PopularClassesCard = ({ item }) => {
                   d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9"
                 />
               </svg>
-              <p className="text-[14px] font-titleFont">{lesson}</p>
+              <span className="text-[14px] font-titleFont mt-[3px]">
+                {lesson}
+              </span>
             </div>
-            <div className="flex justify-between gap-[5px] ml-[30px]">
+            <div className="flex ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -54,9 +56,9 @@ const PopularClassesCard = ({ item }) => {
                   d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              <p>{hour}</p>
+              <p className="text-[14px] font-titleFont mt-[3px]">{hour}</p>
             </div>
-            <div className="flex justify-between gap-[5px] ml-[20px]">
+            <div className="flex  ml-[20px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -72,7 +74,7 @@ const PopularClassesCard = ({ item }) => {
                 />
               </svg>
 
-              <p>{level}</p>
+              <p className="text-[14px] font-titleFont mt-[5px]">{level}</p>
             </div>
           </div>
         </div>

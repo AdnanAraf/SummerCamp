@@ -74,10 +74,10 @@ const SignUp = () => {
     <div className="flex">
       <div className="lg:flex bg-blue-50">
         <div className="form-container border-2 w-[400px] h-[600px] m-auto my-[50px] lg:mx-[200px]">
-          <h2 className="text-center text-3xl font-bold ">Sign Up</h2>
+          <h2 className="text-center text-3xl font-bold mt-[50px]">Sign Up</h2>
           <form onSubmit={handleRegister} className="text-center">
             {/*********************************NAME********************************************** */}
-            <div className="mx-[50px] ">
+            <div className="mx-[50px] mt-[-50px]">
               <label className="block" htmlFor="name">
                 Name
               </label>
@@ -125,7 +125,7 @@ const SignUp = () => {
               <button className="btn btn-info w-[300px] ">Sign Up</button>
             </div>
           </form>
-          <p className="text-center  ">
+          <p className="text-center mt-[-50px] ">
             <small>
               New to SummerCamp?
               <Link to="/login">Already Have an Account</Link>
