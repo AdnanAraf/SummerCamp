@@ -5,22 +5,22 @@ import Anim from "../Animation2.json";
 const Slider = () => {
   return (
     <div>
-      <div className="flex justify-between bg-[#e9f4f1a7]">
-        <div>
-          <h1 className="text-[30px] font-titleFont pt-[100px] pl-[150px]">
+      <div className="lg:flex lg:justify-between flex lg:flex-row  flex-col-reverse bg-[#e9f4f1a7]">
+        <div className="mt-[-50px] lg:mt-[0px]">
+          <h1 className="lg:text-[30px] text-[20px] pl-[20px]   font-titleFont lg:pt-[100px] lg:pl-[150px]">
             Welcome to,<br></br>{" "}
             <span className="text-[#63debd] font-semibold">
               Foreign Language Institute
             </span>
           </h1>
-          <p className="text-[16px] w-[700px] pl-[150px] pt-[10px]">
+          <p className="text-[16px] lg:w-[700px] pl-[20px] font-cursive lg:pl-[150px] pt-[10px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
             voluptas natus! Eius laboriosam, aliquam quibusdam reiciendis
             commodi officia numquam accusantium accusamus nisi similique
             quisquam tempora cupiditate, architecto eaque doloremque.
             Repellendus!
           </p>
-          <button className="btn btn-outline btn-success ml-[150px] mt-[20px]">
+          <button className="btn btn-outline btn-success lg:ml-[150px] mt-[20px]">
             Get Started
           </button>
         </div>
