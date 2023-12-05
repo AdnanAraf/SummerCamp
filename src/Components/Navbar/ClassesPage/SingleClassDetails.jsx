@@ -59,19 +59,19 @@ const SingleClassDetails = () => {
   };
 
   return (
-    <div className="bg-gray-100 h-full flex p-[20px] justify-between">
-      <div className="h-[800px] w-[700px] bg-white mt-[50px] ml-[50px]">
-        <h1 className="text-[25px] font-titleFont font-semibold pl-[20px] pt-[10px]">
+    <div className="bg-gray-100 lg:h-full lg:flex lg:p-[20px] justify-between">
+      <div className="lg:h-[800px] lg:w-[700px] bg-white mt-[50px] lg:ml-[50px]">
+        <h1 className="lg:text-[25px] lg:w-[0px] w-[350px]  text-[20px] font-titleFont font-semibold pl-[10px] lg:pl-[20px] pt-[10px]">
           {name} Teaching Course
         </h1>
-        <div className="flex p-[20px] gap-[10px]">
+        <div className="flex lg:p-[20px] gap-[10px] p-[10px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6 ml-[20px]"
+            className="w-6 h-6 lg:ml-[20px]"
           >
             <path
               strokeLinecap="round"
@@ -84,13 +84,13 @@ const SingleClassDetails = () => {
 
         <div>
           <img
-            className="h-[600px] pt-[50px] m-auto rounded-lg"
+            className="lg:h-[600px] pt-[50px] lg:m-auto rounded-lg"
             src={img}
           ></img>
         </div>
       </div>
       <div>
-        <div className="bg-white h-[500px] w-[500px] mr-[100px]  mt-[50px]">
+        <div className="bg-white lg:h-[500px] lg:w-[500px] lg:mr-[100px]  mt-[50px]">
           <h2 className="text-center font-bold my-[10px]">What is included?</h2>
           <hr></hr>
 
@@ -172,7 +172,7 @@ const SingleClassDetails = () => {
           {availableseat > 0 ? (
             <button
               onClick={() => handleclick(data)}
-              className="btn btn-outline btn-info ml-[200px] mt-[15px] w-[164px]"
+              className="btn btn-outline btn-info lg:ml-[200px] ml-[100px] mt-[15px] w-[164px]"
             >
               Add to cart
             </button>
@@ -183,7 +183,7 @@ const SingleClassDetails = () => {
               </h1>
               <button
                 onClick={() => handleclick(data)}
-                className="btn btn-outline btn-info ml-[170px] mt-[15px] w-[164px] "
+                className="btn btn-outline btn-info lg:ml-[170px] mt-[15px] w-[164px] "
                 disabled
               >
                 Add to cart

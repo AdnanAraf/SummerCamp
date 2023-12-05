@@ -15,7 +15,7 @@ const ClassesPage = () => {
   }, []);
   return (
     <div>
-      <div className="grid grid-cols-4 gap-[20px] mt-[20px] ml-[30px]">
+      <div className="grid lg:grid-cols-4 gap-[20px] mt-[20px] ml-[30px]">
         {student.map((item) => (
           <ClassesPageCard key={item._id} item={item} />
         ))}
