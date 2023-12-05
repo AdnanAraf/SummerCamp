@@ -10,10 +10,10 @@ const PopularClasses = () => {
   }, []);
   return (
     <div className="bg-gray-200">
-      <h1 className="text-[25px] font-titleFont ml-[50px] pt-[100px] font-semibold">
+      <h1 className="text-[25px] font-titleFont ml-[35px] lg:pt-[100px] pt-[50px] font-semibold">
         Popular Class
       </h1>
-      <div className="grid grid-cols-4 gap-[20px] ml-[50px] pt-[50px]">
+      <div className="grid lg:grid-cols-4  grid-cols-1  gap-[20px] pt-[30px]   ml-[35px]    lg:ml-[50px] lg:pt-[50px]">
         {category.map((item) => (
           <PopularClassesCard key={item.id} item={item}></PopularClassesCard>
         ))}

@@ -6,7 +6,7 @@ const PopularClassesCard = ({ item }) => {
   const { name, lesson, hour, level, img, rating, price } = item;
   return (
     <div>
-      <div className="h-[400px] w-[300px] bg-white rounded-lg shadow-lg ">
+      <div className="h-[400px] w-[300px] bg-white lg:rounded-lg shadow-lg ">
         <img className="h-[200px] w-full" src={img}></img>
 
         <div>
