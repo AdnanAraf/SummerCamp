@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  FaBars,
   FaHome,
   FaSchool,
   FaShoppingCart,
@@ -16,12 +15,19 @@ const Dashboard = () => {
   const [isAdmin] = useAdmin();
   return (
     <div>
-      <label htmlFor="my-drawer-2" className="ml-[350px]  lg:hidden">
-        <FaBars />
+      <label
+        htmlFor="my-drawer-2"
+        className="ml-[300px] text-[12px] drawer-button lg:hidden"
+      >
+        Open drawer
       </label>
       <div className="drawer lg:drawer-open">
-        <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content  ">
+        <input
+          id="my-drawer-2"
+          type="checkbox"
+          className="drawer-toggle bg-white"
+        />
+        <div className="drawer-content  bg-white">
           <Outlet />
         </div>
         <div className="drawer-side">
@@ -55,11 +61,11 @@ const Dashboard = () => {
             {isAdmin ? (
               <>
                 {" "}
-                <li className="mt-[30px] font-titleFont font-semibold text-[16px]">
+                {/* <li className="mt-[30px] font-titleFont font-semibold text-[16px]">
                   <Link>
                     <FaSchool /> Manage Class
                   </Link>
-                </li>
+                </li> */}
                 <li className="mt-[10px] font-titleFont font-semibold text-[16px]">
                   <Link to="/dashboard/alluser">
                     <FaUsers />
@@ -69,7 +75,7 @@ const Dashboard = () => {
               </>
             ) : (
               <>
-                <li className="mt-[30px] font-titleFont  font-semibold text-[16px]">
+                <li className="mt-[30px] font-titleFont font-semibold text-[16px]">
                   <Link to="/dashboard/enroll">
                     <FaHome></FaHome>My enrolled Class
                   </Link>

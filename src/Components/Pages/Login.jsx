@@ -42,8 +42,8 @@ const Login = () => {
       });
   };
   return (
-    <div className="flex ">
-      <div className="form-container border-2 w-[400px] h-[520px] mx-[200px] my-[100px]">
+    <div className="lg:flex ">
+      <div className="form-container border-2 lg:w-[400px] h-[520px] lg:mx-[200px] my-[100px]">
         <h2 className="text-center text-3xl font-bold">Login</h2>
         <form onSubmit={handleLogin} className="text-center">
           <div className="mx-[50px] ">

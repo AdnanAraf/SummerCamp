@@ -200,7 +200,7 @@ const Navbar = () => {
                       Dashboard
                     </Link>
                     <Link
-                      className="text-[18px] p-[10px] font-titleFont font-semibold hover:bg-blue-800 hover:text-white text-black"
+                      className="text-[18px]  p-[10px] font-titleFont font-semibold hover:bg-blue-800 hover:text-white text-black"
                       onClick={handleLogOut}
                       to=""
                     >
@@ -211,14 +211,23 @@ const Navbar = () => {
               </div>
             ) : (
               <div>
-                <Link
-                  className="lg:p-[10px] pt-[40px]  lg:mr-[260px]  text-black font-LogoFont1 text-[20px] hover:text-red-500"
+                {/* <Link
+                  className="lg:p-[10px] pt-[40px]   lg:mr-[260px]"
                   to="login"
                 >
-                  <button className="h-[40px] mt-[20px]  w-[100px] bg-white ml-[-5px] ] ">
+                  <h1 className="h-[40px] mt-[20px] font-bodyFont text-[16px]  text-black  w-[100px] text-black ml-[20px] text-[20px] font-LogoFont1 ">
                     Login
-                  </button>
-                </Link>
+                  </h1>
+                </Link> */}
+                <li className="pt-[30px]">
+                  {" "}
+                  <Link
+                    className="p-[20px] font-bodyFont text-[16px]  text-black "
+                    to="login"
+                  >
+                    Login
+                  </Link>
+                </li>
               </div>
             )}
           </ul>
