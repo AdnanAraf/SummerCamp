@@ -11,8 +11,8 @@ const Mycart = () => {
   return (
     <div>
       <div>
-        <div className="overflow-x-auto h-[600px] mt-[70px] ">
-          <table className="table w-full">
+        <div className="overflow-x-auto lg:h-full mt-[70px] ">
+          <table className="table lg:w-full">
             {/* head */}
             <thead>
               <tr>

@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  FaBars,
   FaHome,
   FaSchool,
   FaShoppingCart,
@@ -15,16 +16,13 @@ const Dashboard = () => {
   const [isAdmin] = useAdmin();
   return (
     <div>
+      <label htmlFor="my-drawer-2" className="ml-[350px]  lg:hidden">
+        <FaBars />
+      </label>
       <div className="drawer lg:drawer-open">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content  ">
           <Outlet />
-          <label
-            htmlFor="my-drawer-2"
-            className="btn btn-primary drawer-button lg:hidden"
-          >
-            Open drawer
-          </label>
         </div>
         <div className="drawer-side">
           <label
@@ -32,7 +30,7 @@ const Dashboard = () => {
             aria-label="close sidebar"
             className="drawer-overlay "
           ></label>
-          <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+          <ul className="menu p-4 w-[250px] min-h-full bg-base-200 text-base-content">
             <div className="flex gap-[10px] mt-[20px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +69,7 @@ const Dashboard = () => {
               </>
             ) : (
               <>
-                <li className="mt-[30px] font-titleFont font-semibold text-[16px]">
+                <li className="mt-[30px] font-titleFont  font-semibold text-[16px]">
                   <Link to="/dashboard/enroll">
                     <FaHome></FaHome>My enrolled Class
                   </Link>

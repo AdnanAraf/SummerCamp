@@ -18,11 +18,9 @@ const MyenrollClass = () => {
   // }, []);
   return (
     <div>
-      <div>
+      <div className="grid lg:grid-cols-4 grid-cols-1">
         {payment.map((item) => (
-          <div>
-            <MyenrollClassCard key={item._id} item={item} />
-          </div>
+          <MyenrollClassCard key={item._id} item={item} />
         ))}
       </div>
     </div>
