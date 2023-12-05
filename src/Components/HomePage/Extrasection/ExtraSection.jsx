@@ -8,20 +8,20 @@ import {
 
 const ExtraSection = () => {
   return (
-    <div className="bg-slate-100 flex mt-[20px]">
+    <div className="bg-slate-100 lg:flex mt-[20px]">
       <div>
-        <h1 className="text-[30px] font-bold text-blue-900 pt-[100px] pl-[50px]">
+        <h1 className="text-[30px] font-bold text-blue-900 pt-[50px]   lg:pt-[100px] lg:pl-[50px] pl-[30px]">
           Our Specialty
         </h1>
-        <p className="w-[700px] pt-[10px] pl-[50px] font-titleFont text-[16px]">
+        <p className="lg:w-[700px] pt-[10px] lg:pl-[50px] font-titleFont text-[16px] pl-[30px]">
           We understand that every student is unique, which is why we customize
           our teaching methods to cater to individual needs. Whether you're
           seeking academic enrichment, test preparation, or skill development,
           our programs are designed with you in mind.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-[10px] mt-[50px]">
-        <div className="h-[250px] w-[400px] bg-[#4bcaaa] rounded-lg">
+      <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-[10px] gap-[20px] mt-[50px]">
+        <div className="h-[250px] lg:w-[400px] bg-[#4bcaaa] rounded-lg">
           <h1 className="text-white text-[25px] font-bold text-center ">
             Experienced Instructors
           </h1>
@@ -32,7 +32,7 @@ const ExtraSection = () => {
             special qualifications they may have.
           </p>
         </div>
-        <div className="h-[250px] w-[400px]  rounded-lg bg-white  border-2 border-gray-300">
+        <div className="h-[250px] lg:w-[400px]  rounded-lg bg-white  border-2 border-gray-300">
           <h1 className=" text-[25px] font-bold text-center pt-[20px]">
             Proven Results
           </h1>
@@ -44,7 +44,7 @@ const ExtraSection = () => {
             admissions.
           </p>
         </div>
-        <div className="h-[250px] w-[400px]  rounded-lg bg-white  border-2 border-gray-300">
+        <div className="h-[250px] lg:w-[400px]  rounded-lg bg-white  border-2 border-gray-300">
           <h1 className=" text-[25px] font-bold text-center pt-[20px]">
             Customized Learning
           </h1>
@@ -56,7 +56,7 @@ const ExtraSection = () => {
             commitment to customized learning.
           </p>
         </div>
-        <div className="h-[250px] w-[400px]  rounded-lg bg-white  border-2 border-gray-300">
+        <div className="h-[250px] lg:w-[400px]  rounded-lg bg-white  border-2 border-gray-300">
           <h1 className=" text-[25px] font-bold text-center pt-[20px]">
             Testimonials and Reviews:
           </h1>
